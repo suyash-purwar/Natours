@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Suyash-Purwar/Natours.git"
+  },
+  "author": "Suyash Purwar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Suyash-Purwar/Natours/issues"
+  },
+  "homepage": "https://github.com/Suyash-Purwar/Natours#readme",
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  }
+}
