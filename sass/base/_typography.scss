@@ -1,0 +1,23 @@
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 5rem;
+
+    &--main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 40rem;
+        letter-spacing: 3.5rem;
+        animation: moveInLeft 1s ease-in;
+    }
+    
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        letter-spacing: 1.75rem;
+        font-weight: 70rem;
+        animation: moveInRight 1s ease-in;
+    }
+    
+}
