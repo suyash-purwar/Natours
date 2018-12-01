@@ -553,7 +553,7 @@ body {
     background-color: #333;
     display: inline-block; }
   .navigation__icon::after, .navigation__icon::before {
-    height: .1rem !important;
+    height: .2rem !important;
     content: "";
     position: absolute;
     left: 0; }
