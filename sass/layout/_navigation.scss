@@ -20,12 +20,12 @@
     &__icon {
         position: relative;
         margin-top: 3.5rem;
-        // height: 2px !important;
 
         &,
         &::after,
         &::before {
-            height: .2rem !important;
+            content: "";
+            height: .2rem;
             width: 3rem;
             background-color: $color-grey-dark-3;
             display: inline-block;
@@ -33,10 +33,10 @@
 
         &::after,
         &::before {
-            height: .2rem !important;
             content: "";
             position: absolute;
             left: 0;
+            transition: all .1s;
         }
 
         &::before {
@@ -126,5 +126,27 @@
         transform: translateX(0);
     }
 
-    
+    &__button:hover &__icon::after {
+        top: 1rem;
+        height: .2rem;
+    }
+
+    &__button:hover &__icon::before {
+        top: -1rem;
+        height: .2rem;
+    }
+
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent;
+    }
+
+    &__checkbox:checked + &__button &__icon::after {
+        transform: rotate(135deg);
+        top: 0;
+    }
+
+    &__checkbox:checked + &__button &__icon::before {
+        transform: rotate(-135deg);
+        top: 0;
+    }
 }
