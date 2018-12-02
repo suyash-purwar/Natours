@@ -3,7 +3,6 @@ body {
     font-weight: 400;
     line-height: 1.7;
     color: $color-grey-dark;
-    padding: 30px;
 }
 
 .heading-primary {
@@ -18,6 +17,11 @@ body {
         font-weight: 40rem;
         letter-spacing: 3.5rem;
         animation: moveInLeft 1s ease-in;
+
+        @include respond(phone) {
+            font-size: 5rem;
+            letter-spacing: 1.5rem;
+        }
     }
     
     &--sub {
@@ -26,6 +30,10 @@ body {
         letter-spacing: 1.75rem;
         font-weight: 70rem;
         animation: moveInRight 1s ease-in;
+
+        @include respond(phone) {
+            letter-spacing: .5rem;
+        }
     }
     
 }
@@ -40,6 +48,14 @@ body {
     background-clip: text;
     color: transparent;
     transition: all .2s;
+
+    @include respond(tablet-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
 
     &:hover {
         transform: skewX(15deg) skewY(2deg) scale(1.1);

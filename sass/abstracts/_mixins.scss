@@ -29,6 +29,11 @@ $breakpoint argument choices:
 
 */
 @mixin respond($breakpoint) {
+    @if $breakpoint == phone {  // width < 600px
+        @media (max-width: 37.5em) {    // 600px
+            @content; 
+        }
+    }
     @if $breakpoint == tablet-land { // width < 1200
         @media (max-width: 75em) {  // 1200px;
             @content;
