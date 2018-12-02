@@ -41,13 +41,11 @@
     }
 
     &__content {
+        @include absCenter;
         width: 75%;
         background-color: $color-white;
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
         border-radius: 3px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
         transform: translate(-50%, -50%) scale(.2);
         opacity: 0;
         display: table;

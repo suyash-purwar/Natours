@@ -58,8 +58,6 @@
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 1000;
         transition: all .8s cubic-bezier(0.86, 0, 0.07, 1);
-
-        // transform: scale(80);
     }
 
     &__nav {
@@ -76,11 +74,8 @@
     }
 
     &__list {
-        position: absolute;
-        top: 50%;
+        @include absCenter;
         width: 100%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         list-style: none;
         text-align: center;
     }
