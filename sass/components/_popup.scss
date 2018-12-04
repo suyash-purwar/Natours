@@ -56,6 +56,15 @@
     &__left {
         width: 33.33333%;
         display: table-cell;
+
+        @include respond(tablet-land) {
+            width: 100%;
+            display: block;
+        }
+
+        @include respond(phone) {
+            display: none;
+        }
     }
 
     &__right {
@@ -63,11 +72,23 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+
+        @include respond(tablet-land) {
+            width: 100%;
+            display: block;
+        }
     }
 
     &__img {
         width: 100%;
         display: block;
+
+        @include respond(tablet-land) {
+            width: 50%;
+            float: left;
+
+            @include clearfix;
+        }
     }
 
     &__text {
@@ -88,5 +109,9 @@
         -webkit-hyphens: auto;
 
         hyphens: auto;
+
+        @include respond(phone) {
+            column-count: 1;
+        }
     }
 }

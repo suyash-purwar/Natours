@@ -62,10 +62,24 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     border-radius: 3px;
 
-    height: 50rem;
+    @include respond(tablet-land) {
+        background-image: linear-gradient(105deg, rgba($color-white, .9) 65%, transparent 65%), url(../img/nat-10.jpg);
+    }
+
+    @include respond(tablet-port) {
+        background-image: linear-gradient(to right, rgba($color-white, .9) 100%, transparent 100%), url(../img/nat-10.jpg);
+    }
 
     &__form {
         width: 50%;
         padding: 6rem;
+
+        @include respond(tablet-land) {
+            width: 65%;
+        }
+
+        @include respond(tablet-port) {
+            width: 100%;
+        }
     }
 }
