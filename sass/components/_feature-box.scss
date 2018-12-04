@@ -7,6 +7,10 @@
     border-radius: 3px;
     transition: all .3s;
 
+    @include respond(tablet-port) {
+        padding: 2rem;
+    }
+
     &__icon {
         font-size: 6rem;
         margin-bottom: .5rem;
@@ -14,6 +18,10 @@
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
+
+        @include respond(tablet-port) {
+            margin-bottom: 0;
+        }
     }
 
     &:hover {
